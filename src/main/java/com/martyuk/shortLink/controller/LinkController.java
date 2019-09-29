@@ -16,7 +16,7 @@ public class LinkController {
     private final LinkRepository linkRepository;
     private final ValidCheckService validCheckService;
     // TODO change path
-    private final static String URL_PATH = "http://localhost:8080/go/";
+    private final static String URL_PATH = "https://qclik.herokuapp.com/go";
 
     public LinkController(LinkService linkService, LinkRepository linkRepository, ValidCheckService validCheckService) {
         this.linkService = linkService;
