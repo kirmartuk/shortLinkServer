@@ -24,7 +24,7 @@ public class LinkController {
         this.validCheckService = validCheckService;
     }
 
-    @GetMapping("/go/{id}")
+    @GetMapping("go/{id}")
     public RedirectView get(@PathVariable String id) {
 
         Link link;
@@ -36,7 +36,7 @@ public class LinkController {
         return redirectView;
     }
 
-        @PostMapping("/create")
+        @PostMapping("create")
         public String create(@RequestBody LinkItemDTO dto) {
         if(!validCheckService.isValid(dto.getRawLink())){
             return "Некорректная ссылка";
