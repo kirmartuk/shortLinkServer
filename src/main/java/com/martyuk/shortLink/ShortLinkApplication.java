@@ -8,10 +8,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
-@EnableJpaRepositories(basePackages = "com.martyuk.shortLink.data")
-@EntityScan(basePackages = "com.martyuk.shortlink.entity")
-@EnableTransactionManagement
-@EnableScheduling
 public class ShortLinkApplication {
 
 	public static void main(String[] args) {
