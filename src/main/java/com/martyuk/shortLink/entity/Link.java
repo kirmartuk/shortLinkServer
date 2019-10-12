@@ -2,7 +2,6 @@ package com.martyuk.shortLink.entity;
 
 import javax.persistence.*;
 @Entity
-@Table(name = "link")
 public class Link  {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
