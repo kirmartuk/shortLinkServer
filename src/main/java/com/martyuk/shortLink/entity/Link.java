@@ -2,11 +2,12 @@ package com.martyuk.shortLink.entity;
 
 import javax.persistence.*;
 @Entity
+@Table(name = "link")
 public class Link  {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @Column
+    @Column(name = "mod")
     private String modificatedLink;
     @JoinColumn(name = "rawLink_id")
     @OneToOne

@@ -11,6 +11,8 @@ public class LinkItemDTO {
 
     }
 
+    public LinkItemDTO() {
+    }
 
     public String getRawLink() {
         return rawLink;
