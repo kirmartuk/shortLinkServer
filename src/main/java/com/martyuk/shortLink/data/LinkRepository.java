@@ -7,7 +7,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 
-public interface LinkRepository extends JpaRepository<Link, Long> {
+public interface LinkRepository extends CrudRepository<Link, Long> {
     Link findByModificatedLink(String link);
     Link findByRawLink(RawLink rawlink);
 }

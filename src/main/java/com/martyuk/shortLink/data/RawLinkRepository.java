@@ -5,6 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-public interface RawLinkRepository extends JpaRepository<RawLink,Long> {
+public interface RawLinkRepository extends CrudRepository<RawLink,Long> {
     RawLink findByRawLink(String rawLink);
 }
